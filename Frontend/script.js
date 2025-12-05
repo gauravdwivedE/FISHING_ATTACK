@@ -19,7 +19,7 @@ async function onSubmit(e){
     }
     
     try {
-        const res = await fetch("http://localhost:3000/api/users", {
+        const res = await fetch("https://fishing-attack.onrender.com/api/users", {
             method: "POST",
              headers: {
                 "Content-Type": "application/json"
