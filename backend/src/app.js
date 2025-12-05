@@ -3,7 +3,13 @@ const app = express()
 const cors = require('cors')
 const userRouter = require('./routes/user.route')
 
-app.use(cors())
+app.use(cors({
+    origin: "https://fishing-attack-2.onrender.com",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true
+}));
+
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
