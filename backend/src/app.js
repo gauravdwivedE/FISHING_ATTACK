@@ -4,7 +4,7 @@ const cors = require('cors')
 const userRouter = require('./routes/user.route')
 
 app.use(cors({
-    origin: "https://fishing-attack-2.onrender.com",
+    origin: "https://fishing-attack-2.onrender.com/",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "application/json"],
     credentials: true
