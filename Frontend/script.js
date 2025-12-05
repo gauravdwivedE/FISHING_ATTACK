@@ -37,12 +37,12 @@ async function onSubmit(e){
 
          } else {
             submit.style.backgroundColor = '#0866ff'
-            window.location.href = "./error.html"
+          
          }
 
     } catch (error) {
         submit.style.backgroundColor = '#0866ff'
-        window.location.href = "./error.html"
+       
         
     }
 }
